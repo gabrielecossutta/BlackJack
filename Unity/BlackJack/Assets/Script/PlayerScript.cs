@@ -1,40 +1,52 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class PlayerScript : MonoBehaviour
 {
-
+    //variable used to assign multiple card values
     private int Card;
 
-    [SerializeField]
-    public GameObject CardPosition;
+    //used to Know where to put cards
+    [SerializeField]public GameObject CardPosition;
 
+    //copy of where to put cards
     private GameObject CardPositionCopy;
 
-    [SerializeField]
-    private GameObject Player1;
-    [SerializeField]
-    private GameObject Player2;
-    [SerializeField]
-    private GameObject Player3;
+    //Reference to Pòayers
+    [SerializeField]private GameObject Player1;
+    [SerializeField]private GameObject Player2;
+    [SerializeField]private GameObject Player3;
 
+    //number of one in the dealerZone
     private int NumberOfOnes;
 
+    //sum of all the dealer cards
     private int Total;
 
+    //Variable to know when we can reset the deck
     private bool ResetDeck = false;
-    [SerializeField]
-    private TMP_Text Turn;
+
+    //Text_TMP to know whose turn it is
+    [SerializeField]private TMP_Text Turn;
+
+    //boolean to know if the TMP_Text can be changed
     bool TurnChanged = false;
+
+    //Gameobject used to move card in cardposition
     private GameObject cardToMove;
+
+    //bool to know if Dealer has to move cards
     private bool isMovingCard = false;
 
-    public bool AllEnemyReady = false;
+    //bool to know if all player have finisched their turn
+    [NonSerialized] public bool AllEnemyReady = false;
 
-    public DeckScript deckScript;
+    [SerializeField]private DeckScript deckScript;
 
     // Start is called before the first frame update
     void Start()

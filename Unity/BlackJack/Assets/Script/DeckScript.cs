@@ -4,23 +4,27 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class DeckScript : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] Deck;
+    //array containing all the card in order
+    [SerializeField]private GameObject[] Deck;
 
+    //index of the Card
     private int Index;
-    private float x;
-    private float y;
-    private float z;
-    [SerializeField]
-    private float distance;
+
+    //position of the spawned card
+    private float x, y, z;
     private float SpawnPoint;
 
-    [NonSerialized]
-    public bool UnableDeck = false;
+    //Distance to apply from each card spawned
+    [SerializeField]private float distance;
 
+    //bool used to deactivate the shuffle button
+    [NonSerialized]public bool UnableDeck = false;
+
+    //copy of the previous card name put under the deck
     private String previousName;
 
     void Start()

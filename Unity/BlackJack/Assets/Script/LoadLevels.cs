@@ -7,14 +7,20 @@ using UnityEngine.SceneManagement;
 public class LoadLevels : MonoBehaviour
 {
     //Load the Game Level
-    private void LoadGame()
+    public void LoadGame()
     {
         SceneManager.LoadScene("Game");
     }
 
     //Load the menu level
-    private void LoadMenu()
+    public void LoadMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    //close the Game
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

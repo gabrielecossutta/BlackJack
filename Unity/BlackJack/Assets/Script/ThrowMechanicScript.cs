@@ -3,33 +3,38 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class ThrowMechanicScript : MonoBehaviour
 {
-    [SerializeField, Range(1, 10)]
-    private float throwForce;
+    //strength of the throws 
+    [SerializeField, Range(1, 10)]private float throwForce;
 
     //String used to search the card in the array of Card
-    [NonSerialized]
-    public new string name;
+    [NonSerialized]public new string name;
 
-    [SerializeField]
-    private LineRenderer lineRenderer;
-
-    [SerializeField]
-    private DeckScript deckScript;
-
+    //Gameobject to know have to be moved
     private GameObject objectToDrag;
 
+    //LineRender used to visually see where the player is throwing the card
+    [SerializeField] private LineRenderer lineRenderer;
+
+    //starting position for the Line Rendere
     private Vector3 startMousePosition;
 
+    //starting position of the card
     private Vector3 startObjectPosition;
 
+    //bool to know if something is dragged
     private bool isDragging = false;
 
+    //Rigidbody to apply  the throw force
     private new Rigidbody rigidbody;
 
+    //Used to know information about what hit the raycast
     private RaycastHit hit;
+
+    [SerializeField] private DeckScript deckScript;
     void Start()
     {
 

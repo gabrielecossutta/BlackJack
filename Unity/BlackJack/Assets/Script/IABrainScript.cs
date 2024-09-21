@@ -11,40 +11,47 @@ using UnityEngine.UIElements;
 
 public class IABrainScript : MonoBehaviour
 {
+    //variable for the value of 3 cards
     private int FirstCard;
     private int SecondCard;
     private int ThirdCard;
 
-    [SerializeField]
-    private GameObject Card1Position;
+    //used to Know where to put cards
+    [SerializeField]private GameObject Card1Position;
+    [SerializeField]private GameObject Card2Position;
+    [SerializeField]private GameObject Card3Position;
 
-    [SerializeField]
-    private GameObject Card2Position;
-
-    [SerializeField]
-    private GameObject Card3Position;
-
+    //percent of drawing another card
     private float DrawCardPercent;
 
-    [NonSerialized]
-    public int Total;
+    //Total of the 3 cards
+    [NonSerialized]public int Total;
 
-    [NonSerialized]
-    public bool WaitingForPlayer;
+    //boolean used to let know the player that the IA have finished their turn
+    [NonSerialized]public bool WaitingForPlayer;
 
+    //Boolean used to know went the IA want another card
     private bool WantAnotherCard;
+
+    //boolean to know if the IA is Playing
     private bool isPlaying;
 
+    //boolean to know if the additional card as received
     private bool AdditionalCard;
 
+    //animator for the IA
     private Animator animator;
 
+    //Gameobject used to move card in cardposition
     private GameObject cardToMove;
 
+    //Vector used to assign the position of one of the 3 card position
     private Vector3 targetPosition;
 
+    //boolean to know if the IA is moving a card
     private bool isMovingCard = false;
 
+    //action called by the player to know who wins and who lost
     public Action<int> WinOrLose;
 
 
@@ -68,7 +75,7 @@ public class IABrainScript : MonoBehaviour
         if (isMovingCard && cardToMove != null)
         {
             //Interpolate the current Card with the Position were it as to be
-            cardToMove.transform.position = Vector3.Lerp(cardToMove.transform.position, targetPosition, 0.3f);
+            cardToMove.transform.position = Vector3.Lerp(cardToMove.transform.position, targetPosition, 0.1f);
 
             //Check if it is almost close to the position
             if (Vector3.Distance(cardToMove.transform.position, targetPosition) < 0.02f)
