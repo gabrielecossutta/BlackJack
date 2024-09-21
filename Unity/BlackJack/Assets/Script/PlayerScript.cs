@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using static UnityEngine.UIElements.UxmlAttributeDescription;
 
@@ -33,9 +32,6 @@ public class PlayerScript : MonoBehaviour
 
     //Text_TMP to know whose turn it is
     [SerializeField]private TMP_Text Turn;
-
-    //boolean to know if the TMP_Text can be changed
-    bool TurnChanged = false;
 
     //Gameobject used to move card in cardposition
     private GameObject cardToMove;

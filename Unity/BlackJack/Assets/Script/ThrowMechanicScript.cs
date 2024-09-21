@@ -29,7 +29,7 @@ public class ThrowMechanicScript : MonoBehaviour
     private bool isDragging = false;
 
     //Rigidbody to apply  the throw force
-    private new Rigidbody rigidbody;
+    private Rigidbody rigidbody;
 
     //Used to know information about what hit the raycast
     private RaycastHit hit;
