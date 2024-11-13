@@ -51,6 +51,7 @@ the information needed and the feedback elements needed to understand the game.
 state updates (waiting for a new card, busted...) through animations.
 ### ____________________ Gameplay ____________________
 ![Gameplay](./GIF/Gameplay.gif)
+![Animator](./GIF/animator.jpg)
 ## 
 ● At the end of each round, the cards on the table get put together and put at the bottom of
 the deck.
