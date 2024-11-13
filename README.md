@@ -1,8 +1,3 @@
- [**LoadLevels**](#LoadLevels)
- [**DeackScript**](#DeackScript)
- [**PlayerScript**](#PlayerScript)
- [**ThrowMechanicScript**](#ThrowMechanicScript)
- [**IABrainScript**](#IABrainScript)
 # The Game
 Blackjack, also known as twenty-one, is a comparing card game between usually several players
 and a dealer, where each player, in turn, competes against the dealer, but players do not play
@@ -27,6 +22,17 @@ particular behaviours based on your current cards.
 ● The game is divided into "player turn" and "dealer turn". During the player turn, ALL the
 players will ask, at the same time, cards (or stop/bust). When all the players are done with
 their requests, it will be the dealer’s turn (yours).
+
+## Scripts
+[**PlayerScript**](#PlayerScript)
+
+[**ThrowMechanicScript**](#ThrowMechanicScript)
+
+[**IABrainScript**](#IABrainScript)
+
+[**DeackScript**](#DeckScript)
+
+[**LoadLevels**](#LoadLevels)
 
 ## Features
 ● You, the dealer, will be in charge to "pick" the cards and give them to the players. You can throw the card and let it fly
@@ -589,7 +595,7 @@ public class DeckScript : MonoBehaviour
 }
 
 ```
-# DeackScript
+# DeckScript
 ``` cs
 using System;
 using System.Collections;
