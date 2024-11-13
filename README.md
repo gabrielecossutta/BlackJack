@@ -1,5 +1,5 @@
- [**LoadLevels**](#LoadLevels.cs)
- [**DeackScript**](#DeackScript.cs)
+ [**LoadLevels.cs**](#LoadLevels.cs)
+ [**DeackScript**](#DeackScript)
  [**PlayerScript**](#PlayerScript.cs)
  [**ThrowMechanicScript**](#ThrowMechanicScript.cs)
  [**IABrainScript**](#IABrainScript.cs)
