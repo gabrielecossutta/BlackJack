@@ -1,8 +1,8 @@
  [**LoadLevels**](#LoadLevels.cs)
- [**DeackScript**](##DeackScript.cs)
- [**PlayerScript**](##PlayerScript.cs)
- [**ThrowMechanicScript**](##ThrowMechanicScript.cs)
- [**IABrainScript**](## IABrainScript.cs)
+ [**DeackScript**](#DeackScript.cs)
+ [**PlayerScript**](#PlayerScript.cs)
+ [**ThrowMechanicScript**](#ThrowMechanicScript.cs)
+ [**IABrainScript**](#IABrainScript.cs)
 # The Game
 Blackjack, also known as twenty-one, is a comparing card game between usually several players
 and a dealer, where each player, in turn, competes against the dealer, but players do not play
@@ -106,8 +106,8 @@ The project is developed using Unity and C# language!
 
 All the code produced from my own, without any use of plugins.
 ##
-# Code
-## PlayerScript.cs
+
+# PlayerScript.cs
 ``` cs
 using System;
 using System.Collections;
@@ -288,7 +288,7 @@ public class PlayerScript : MonoBehaviour
 }
 ```
 
-## ThrowMechanicScript.cs
+# ThrowMechanicScript.cs
 ``` cs
 using System;
 using System.Collections.Generic;
@@ -445,7 +445,7 @@ public class ThrowMechanicScript : MonoBehaviour
 }
 ```
 
-## IABrainScript.cs
+# IABrainScript.cs
 ``` cs
 using System;
 using System.Collections;
@@ -589,7 +589,7 @@ public class DeckScript : MonoBehaviour
 }
 
 ```
-## DeackScript.cs
+# DeackScript.cs
 ``` cs
 using System;
 using System.Collections;
@@ -734,7 +734,7 @@ public class DeckScript : MonoBehaviour
 
 ```
 
-## LoadLevels.cs
+# LoadLevels.cs
 ``` cs
 using System.Collections;
 using System.Collections.Generic;
