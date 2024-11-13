@@ -23,17 +23,6 @@ particular behaviours based on your current cards.
 players will ask, at the same time, cards (or stop/bust). When all the players are done with
 their requests, it will be the dealer’s turn (yours).
 
-## Scripts
-
-[**PlayerScript**](#PlayerScript)
-
-[**ThrowMechanicScript**](#ThrowMechanicScript)
-
-[**IABrainScript**](#IABrainScript)
-
-[**DeackScript**](#DeckScript)
-
-[**LoadLevels**](#LoadLevels)
 
 ## Features
 ● You, the dealer, will be in charge to "pick" the cards and give them to the players. You can throw the card and let it fly
@@ -104,6 +93,19 @@ public void PutUnderDeck(String Card)
     previousName = Card;
 }
 ```
+
+##
+## Scripts
+
+[**PlayerScript**](#PlayerScript)
+
+[**ThrowMechanicScript**](#ThrowMechanicScript)
+
+[**IABrainScript**](#IABrainScript)
+
+[**DeackScript**](#DeckScript)
+
+[**LoadLevels**](#LoadLevels)
 ##
 Graphical assets downloaded from the internet.
 
