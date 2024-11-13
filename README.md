@@ -39,8 +39,15 @@ their values. If a certain card is on the table, it won't be in the deck.
 ## 
 ● The deck is perfectly ordered, by default. You have a button close to the deck that shuffles
 it.
-### ___________________ Shuffled _______________________________________ Not Shuffled ___________________
-![shuffled](./GIF/shuffled.gif) ![NotShuffled](./GIF/NotShuffled.gif)
+
+### __________________ Not Shuffled __________________
+
+![NotShuffled](./GIF/NotShuffled.gif)
+
+### ___________________ Shuffled _____________________
+![shuffled](./GIF/shuffled.gif)
+
+
 ## 
 ● There are Screen Space UI (eg. the menu button) and World Space UI (eg. shuffle buttons). You should give all
 the information needed and the feedback elements needed to understand the game.
