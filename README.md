@@ -1,5 +1,5 @@
-# The Game
-Blackjack, also known as twenty-one, is a comparing card game between usually several players
+# Blackjack
+Also known as twenty-one, is a comparing card game between usually several players
 and a dealer, where each player, in turn, competes against the dealer, but players do not play
 against each other. The objective of the game is to beat the dealer in one of the following ways:
 
@@ -10,7 +10,7 @@ dealer blackjack;
 
 ● Let the dealer draw additional cards until their hand exceeds 21.
 
-## Compared to the full game, some differences in rules/simplifications:
+## Compared to the full game, there are some differences in rules/simplifications
 ● Players do not see any of your cards. The "AI" behind the players is super simple, above 15 points the AI player has x % of wanting another card".
 
 ● No betting part and its rules. it just determine who wins
