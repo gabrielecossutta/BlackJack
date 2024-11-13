@@ -23,7 +23,8 @@ particular behaviours based on your current cards.
 players will ask, at the same time, cards (or stop/bust). When all the players are done with
 their requests, it will be the dealer’s turn (yours).
 
-## Scripts
+# Scripts
+
 [**PlayerScript**](#PlayerScript)
 
 [**ThrowMechanicScript**](#ThrowMechanicScript)
@@ -112,8 +113,8 @@ The project is developed using Unity and C# language!
 
 All the code produced from my own, without any use of plugins.
 ##
-
 # PlayerScript
+[# PlayerScript](#Scripts)
 ``` cs
 using System;
 using System.Collections;
